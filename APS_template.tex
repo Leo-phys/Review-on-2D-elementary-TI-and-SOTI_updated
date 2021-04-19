@@ -1,0 +1,724 @@
+
+\documentclass[aps,prd,reprint,twocolumn,superscriptaddress,showpacs]{revtex4-1}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{dcolumn}
+\usepackage{epstopdf}
+\usepackage{dsfont}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{color}
+\usepackage{epstopdf}
+\usepackage{mathrsfs}
+\usepackage{ragged2e}
+\usepackage[colorlinks, linkcolor=blue,anchorcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newcommand{\ucite}[1]{\textsuperscript{\textsuperscript{\citep{#1}}}}
+
+\begin{document}
+\title{First and second order topological insulator in 2D elementary materials}
+
+
+%\author{Shengyuan A. Yang}
+%\affiliation{Research Laboratory for Quantum Materials, Singapore University of Technology and Design, Singapore 487372, Singapore}
+%%\affiliation{Center for Quantum Transport and Thermal Energy Science, School of Physics and Technology, Nanjing Normal University, Nanjing 210023, China}
+
+\begin{abstract}
+Topological insulators are new class of quantum materials characterized by surface states, while recently proposed higher order topological insulators are determined by their corner states. We review some typical two dimensional (2D) topological materials of first and second order, focusing on the theory aspects.
+\end{abstract}
+
+\maketitle
+
+\textbf{Keywords}: type-II; nodal point; nodal line; topological metals
+
+
+%\textbf{PACS:} 72.25.-b, 75.47.-m, 78.40.Kc
+
+\tableofcontents
+
+
+\section{Introduction}
+%This template is recommended for authors who will submit their manuscript in LaTex to Chinese Physics B.\ucite{1} You are also advised to read some articles (Refs.~\cite{2,3,4}) already published in our journal. It can be very helpful for preparing your own manuscript, especially for preparing formatted formulas, tables, figures, and references.
+
+Insulator is the material that do not conduct elections everywhere within its range. The corresponding band structure usually has a relatively large gap in the bulk with the order of 0.1eV or higher. However, topological insulator (TI) or Quantum spin Hall effect (QSHE), a new quantum state of matter discovered by Kane and Mele, has a nontrivial topological property, resulting in an insulating bulk surrounded by conducting edge states. It has recently attracted a lot of attentions due to its scientific importance as a novel quantum state as well as the technological applications in electronics and spintronics.
+
+Recently, a series of novel topological phases are proposed as the extension of the TI, i.e. the higher-order TIs \ucite{Zhang2013Surface, Benalcazar61multipole,Langbehn2017SOTI,Song2017Edge,Benalcazar2017multipole,Schindlereaat2018HOTI}.
+As a defining property, an nth order TI in d dimensions features topological protected gapless states at its (d-n)
+dimensional boundary at the intersection of n crystal faces,
+but is gapped otherwise. In this topical review, we focus on systems with n=d=2, i.e. second-order
+topological insulator (SOTI) in 2D, which hosts topological conducting states located at its 0D corners intersected between different
+edges. Distinct from normal TI, SOTI is not only an insulator in the bulk but also in the edge, with only conducting corner states.
+
+Due to the fewer number of materials in 2D, and its special properties, 2D is of scientific interest and importance. Therefore,
+%there is only one proposal that is able to demonstrate QSHE in a real system, which is in two dimensional HgTe-CdTe semiconductor quantum wells [3,4] in spite of some theoretic suggestions [5,6]
+in this topical review, we summarize some typical 2D elementary TIs in both first order and second order. For normal (first order) TI, graphene, silicene (germanium), a series of tin films and bismuthene on SiC substrate are reviewed in especially their topological aspects, such as band gap, gapless edge states, and potential applications; for second order TI (SOTI), graphyne, graphdiyn, bismuthene on EuO substrate, and twisted bi-layer graphene (TBG) are selected for introduction.
+
+
+
+%round 1, 统一语言，调整格式顺序，图片中的乱码，并且写出总结展望和介绍，
+%round 2 图片加引用，正文中的引用加
+\section{First order topological insulators}
+
+In the first part, we are going to review several important normal elementary 2D Topological insulators in the order that they are discovered. % are new states of quantum  matter that are interesting for both fundamental condensed matter physics and material science [1–4], Such states are characterized by an insulating bulk, and metallic surface or edge states protected by time-reversal symmetry.
+\subsection{Graphene}
+
+
+As the first predicted TI, graphene opens a new genre in condensed matter physics, which have been attracting considerable attentions ever since.
+Compared with most other 2D materials, graphene is special in its linear energy spectrum around K points, i.e., the Dirac cones, which act like relativistic fermions and can be described by the massless Dirac equation.
+%The two sublattices in the graphene honeycomb lattice play the role of pseudospin degrees of freedom
+However, having a spin-orbital coupling (SOC) of around 4 meV, a gap of merely the order of $10^{-3}$ meV is opened at the Dirac points, which  requires an unrealistically low temperature for experimental detection.
+The resulting effect, the quantized spin Hall conductance, observed in graphene\ucite{Novoselov2005Dirac,Zhang2005Exp}, proves it a TI.
+In this section, we review the related topological properties of graphene with more details following Ref. \cite{Yao2007Spin}.
+
+%this proposal is a spinful version of Haldane’s  model for the quantum Hall effect without magnetic field,10 (Kane-Mele model QSH) in which a spin-dependent next-nearest-neighbor hopping term is introduced to induce opposite mass terms for the two Dirac cones.
+
+%We present a first-principles calculation of the spin-orbit gap, and explain the behavior in terms of a simple tight-binding model.
+
+%Structure:
+First, a recall for basic properties would be helpful. Graphene, bonded by the $sp^2$ hybridized orbitals, has a honeycomb
+lattice structure, with two carbon atoms per unit cell.
+Dominated by pz orbitals in the low energy range of band, the graphene becomes a semimetal.
+% in momentum space is a 2*2 matrix Hk for the band, and a 6*6 matrix Hk for the band.
+
+To study the possible band gap opened by SOC, a tight binding (TB) model with 2p (px,py,pz) and 2s orbitals is created. For one C atom, SOC can only exists within 2p orbitals, where not only $\sigma$ bands are included, but also $\pi$ bands, when considering the next nearest approximation, should be considered.
+Therefore, it is a model with a mixing of $\pi$ and $\sigma$ bands.
+
+The effective SOC derived from the TB model reads $\xi_1\approx|\xi_0|^2(2\delta_\epsilon)/(9V_{sp\epsilon}^2)$, where the $\xi_0$ is the SOC amplitude computed from the overlap integral of SOC between 2$p_z$ and 2$p_x$ orbitals ($\thicksim$4 meV), the $\delta_\epsilon$ is the energy difference $\epsilon_{2s}-\epsilon_{2p}$, and $V_{sp\epsilon}$ is the strength of $\sigma$ band formed by 2s and 2p orbitals of graphene\ucite{dresselhaus1998physical}.
+Therefore, with all these parameters, $\xi_1$ is estimated to be of order 10$^{-3}$ meV, and the energy gap to be 2$\xi_1$ at the Dirac points.
+
+%DFT:
+The above model result is supported by a first-principles calculation based on density-functional theory (DFT), with experimental lattice
+parameter a=2.456 $\AA$.
+%The relativistic electronic structure of graphene was calculated self-consistently by the plane-wave method13 using a relativistic fully separable pseudopotential in the framework of noncollinear magnetism.
+The band structure of graphene is shown in Fig. 1, where the SOC induced gap for $\sigma$ band is 9.0 meV at the $\Gamma$ point, whereas the gap at K point is 0.8$\times10^{-3}$ meV, whose order is in good agreement with the estimated SOC amplitude obtained from the TB model.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=10cm]{15}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+ Calculated relativistic band structure of graphene.\ucite{Yao2007Spin}}
+\end{center}
+\end{figure}
+
+In Fig. 2, the gapless helical edge state connecting valence and conduction states by two bands of opposite spin is shown\ucite{Kane2005Graphene}, confirming that the graphene is a TI.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{1501}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~2.} (color online)
+ One-dimensional energy bands for a strip of graphene (shown in inset). %modeled by (7) with t2=t  0:03.
+ The bands crossing the gap are spin filtered edge states.\ucite{Kane2005Graphene}}
+\end{center}
+\end{figure}
+Since the gap for graphene is very small, in order to observe the QSH effect, the temperature should be as low as $T\ll 10^{-2}$K.
+The smallness of the gap is due to the $C_3$ symmetry conserved in the model, making the leading-order contributions of SOC  vanish.
+In addition, impurities may also destabilize the QSH effect during experiment.
+
+\subsection{Silicene}
+
+As an extension of graphene, silicene is very similar like graphene. Due to the graphenelike electronic signature in silicene nanoribbons in experiment\ucite{Aufray2010silicene, Padova2010silicene,Lalmi2010silicene}, and its connection with silicon-based microelectronics industry, silicene attracts a lot of attentions. After its synthesization, silicene was proved to be a TI, which can be obtained in an accessible experimental low temperature regime.%\cite{CC Liu:2011}.
+
+Silicene also has 2D honeycomb structure, although fluctuates in the z direction. This structure is the so called ``low-bulked" structure with $sp^3$ like hybrid orbitals, as shown in Fig. 3. The lattice constant of the stable low-buckled structure is $a=3.86{\AA}$ and the nearest neighbor Si-Si distance is $d = 2.28 \AA$ calculated through structural optimization and phonon spectrum.
+
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{1}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[l]{7.5cm}{\footnotesize{\bf Fig.~3.} (color online)  The lattice geometry of low-buckled silicene. (a), (b) The lattice geometry from the side view and
+top view, respectively. Note that A sublattice (red or gray)
+and B sublattice (yellow or light gray) are not coplanar.
+(c) The first Brillouin zone of silicene and its points of high
+symmetry. (d) The angle $\theta$ is defined as being between the Si-Si
+bond and the Z direction normal to the plane.\ucite{Liu2011silicene}}
+\end{center}
+\end{figure}
+
+% we provide systematic investigations on the spin-orbit gap in silicene and germanium with twodimensional honeycomb geometry by first-principles calculation, and show that QSHE:in an experimentally accessible temperature regime in both systems.
+
+It is shown that an appreciable gap can be opened
+at the Dirac points due to spin-orbit coupling and the low-buckled structure in not only the silicene but also the germanium, and the silicene is took as an example for illustration. (Property of germanium is basically the same)
+Compared with planar graphenen, the spin orbital coupling (SOC) effect in silicene is more significant due to the low-buckled structure. Using ab initial
+method with density functional theory (DFT), the band structure of planer and low-buckled silicene are calculated, as shown in Fig. 4(bd). Fig. 4(a)  shows the evolution of band gap caused by the increment of SOC effect, which is indicated by the degree of the buckling, i.e. $\theta$ defined in the Fig. 3(d). The band gap of buckled structure defined by 102$^\circ$ is 1.55 meV corresponding to 18 K which is accessible in experiment. Further more, in silicene the gap size can be enlarged up to 2.9 meV (34K) under a range of hydrostatic strain.
+%To illustrate the band topology of the low-buckled silicene, we begin with their graphene analog, planar silicene,
+%and follow its band structure under an adiabatic transformation during which the unstable planar honeycomb structure is gradually evolved into the low-buckled honeycomb
+%structure.
+%Consequently, the
+%magnitude of the effective SOC depends on the angle .
+%As can be expected with increasing the degree of deviation
+%from the planar structure, the effective SOC will be incremental, and QSHE will be more significant.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{2}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~4.} (color online)   The adiabatic evolution of the gap,
+calculated relativistic band structure, and the topological $Z_2$
+invariant of silicene. (a) The evolution of the gap opened by
+SOC for the $\pi$ orbital at the Dirac point K from the planar
+honeycomb geometry to the low-buckled honeycomb geometry
+with keeping the Si-Si bond length constant. The top and bottom
+abscissas correspond to the difference of vertical height between
+A sublattice and B sublattice and the $\theta$ angle aforementioned,
+respectively, during evolution. (b) and (d) are the relativistic
+band structures with the corresponding geometries in (a). (b),(d)
+Main panel: the relativistic band structure of planar silicene and
+low-buckled silicene, respectively. Inset: zooming in the energy
+dispersion near the K point and the gap induced by SOC. (c) The
+n-field configuration for silicene. The calculated torus in
+Brillouin zone is spanned by $G_1$ and $G_2$. Note that the two
+reciprocal lattice vectors form an angle of $120^{\circ}$. The white and
+black circles denote n = 1 and -1, respectively, while the blank
+denotes 0. The $Z_2$ invariant is 1 obtained by summing the n field
+over half of the torus.\ucite{Liu2011silicene}}
+\end{center}
+\end{figure}
+To prove the non-trivial topology, topological invariant $Z_2$ of the low-buckled silicene is checked to be 1 (Fig. 4(c)). Therefore, silicene, which has low-buckled structure, can realize QSHE at an accessible temperature.
+
+%Experiment:
+% They have not only proven silicene adopting slightly buckled honeycomb geometry and possessing
+%the band dispersion with a behavior analogous to the Dirac
+%cones of graphene, but also synthesized a silicene sheet
+%through epitaxial growth
+
+As an important semiconductor material, germanium, is also proved to be able to  realize QSHE, although not synthesized in experiments yet. The gap induced by SOC effect at the Dirac point in low-buckled germanium is 23.9 meV corresponding to 277 K, %(really???),
+ much higher than that of silicene and the liquid nitrogen temperature.
+%The direct calculation for topological Z2 invariant proves that Ge with low-buckled honeycomb structure has nontrivial band topology
+
+
+\subsection{Large-Gap Quantum Spin Hall Insulators in Tin Films}
+
+Tin (stannum) films, also called stanene, host a series of TI materials consisting of different chemical functional groups. Their bulk gaps are considerably large ($\thicksim$0.3 eV), and their QSH states can be tuned by chemical functionalization and external strain, which make tin films promising TI materials for application in room temperature. In this section, the topological properties about the series materials related with tin films are reviewed.
+%For example, by controlling the chemical functionalization, dissipationless conduction ‘‘wires’’ could be patterned in an ultrathin tin film for low-power-consumption electronics.
+
+Optimized geometries for stanene and decorated stanene (with different chemical group) are shown in Figures 5(a) and (b) (denoted as 2D Sn and 2D SnX, with X representing the chemical functional group).
+Similar like silicene, stanene also tends to have a low-buckled configuration\ucite{Cahangirov2009Silicene}, which is because that the bulking enlarges the overlap and hence the hybridization between $\pi$ and $\sigma$ orbitals, strengthening the structure.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{16}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~5.} (color online)
+ (a),(b) Crystal structure for stanene (2D Sn) and decorated stanene (2D SnX) from the top (side) view [upper
+(lower)]. X represents the chemical functional group. In a unit cell Sn (X) is related to Sn' (X'
+) by an inversion operation. (c) The
+calculated energy gap for stanene (labeled by ``none") and decorated stanene (labeled by ``-X") at their equilibrium lattice constants.
+Red squares and blue circles mark topological and trivial insulators, respectively.\ucite{Xu2013Tin}}
+\end{center}
+\end{figure}
+For decorated stanene, a stable $sp^3$ configuration leads the chemical functional groups to locate on both sides of the nanosheet [see Fig. 5(b)].
+Decorated stanene has slightly larger Sn-Sn bond length, while having a lower buckling of the tin nanosheet, compared with stanene. Both of them have the inversion symmetry. The equilibrium lattice constant and the corresponding energy gap for each SnX material and Sn are shown, and some of them are topologically nontrivial, marked by red blocks, as shown in Fig. 5(c).
+Remarkably, the chemical functionalization groups help to create a lot of TI with gaps around 0.3 eV, considerably exceeding the gap in the tin film without decoration.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{17}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~6.} (color online)
+ Band structure for (a) stanene, (b) fluorinated stanene, and (c) stanane without (black dash-dotted lines) and
+with (red solid lines) spin-orbital coupling. The inset of (a) shows a zoomed in energy dispersion near the K point. The Fermi level is
+indicated by the dashed line. Parities of the Bloch states at the $\Gamma$ point are denoted by $+, -$.\ucite{Xu2013Tin}}
+\end{center}
+\end{figure}
+
+The band structure for stanene systems are shown in Fig. 6.
+The ``stanane" refers to hydrogen terminated tin film.
+As seen from Fig. 6(a), a linearly band crossing occurring at the K point is gapped out when including the SOC effect. Since the tin is the heaviest insulating IV group element (lead is a metal), the gap value of 0.1 eV in stanene seems to be the largest gap that can be realized within the group. A larger nontrivial band gap caused by fluorinating (Fig. 6(b)) demonstrates the impressive effect of the chemical functionalization effect.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{18}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~7.} (color online)
+ Band structure of armchair-edge nanoribbons for (a) stanene, (b) fluorinated stanene, and (c) stanane.
+The ribbon widths are 15.2, 8.4, and 7.8 nm, respectively. $X'= 0.2\pi/L_0$, where $L_0$ is the periodicity of the nanoribbon along its length
+direction. Helical edge states are visualized by red lines crossing linearly at the $\Gamma$ point for stanene and fluorinated stanene. No helical
+edge state exists for stanane.\ucite{Xu2013Tin}}
+\end{center}
+\end{figure}
+
+
+Correspondingly, the edge spectrums calculated from nanoribbon structures with  armchair-type edges are shown in Fig. 7. Note that the dangling bonds of stanene and decorated stanene are saturated with -H and -X.
+For stanene and fluorinated stanene Fig. 7(a,b), gapless helical edge states marked in red cross linearly at $\Gamma$ points, while no
+helical edge state exists for stanane, in agreement with previous results from analyzing the parity.
+
+Helical edge states are well-known in applications of electronics and spintronics, due to their topological robustness against scattering. The Fermi velocity, which decides the speed for conduction, is much higher in fluorinated  stanene ($6.8\times10^5$m/s) than in HgTe quantum well ($5.5\times10^5$m/s).
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{19}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~8.} (color online)
+A schematic diagram showing helical edge states at the phase boundary between the topological insulator and
+trivial insulator, and that are embedded in an atomically thin tin sheet with different chemical functional groups (e.g., X1= -F and
+X2 =-H). The helical edge states can be patterned by controlling the chemical functionalization and used as dissipationless
+conducting ``wires" for electronic circuits.\ucite{Xu2013Tin}}
+\end{center}
+\end{figure}
+
+%In addition, external strain can be introduced by deposition onto a substrate or by exerting mechanical forces to a suspended sample. Topological phase transition can occur by changing chemical functionalization group. Having chemical bonds with substrate, changes band ordering, making the system nontrivial.
+
+Another potential application of the helical edge states is depicted in Fig. 8. The devices can conduct dissipationless current at the boundary between different topological phases achieved by using different chemical functional groups.
+The proposal, once realized, could lower the electric power consumption, pushing the area of integrated circuits a big step forward.
+
+\subsection{Bismuthene on a SiC substrate:
+A candidate for a high-temperature
+quantum spin Hall material}
+
+
+Though several realistic 2D TI materials have been proposed, the small gaps in their bulk band make experimental detection of the QSH effect and room temperature application  challenging. For honeycomb liked systems with the group IV elements reviewed in our previous sections, C, Si, Ge, and Sn, gaps are relatively small (0.8$\times10^{-3}$, 2 , 24 , and 100 meV) compared with room temperature. It is because that for freestanding materials with poor chemical stability,  SOC determines the gap only in higher-order perturbation theory.
+To generate larger gap, heavier elements are appreciated, due to their larger spin-orbital-coupling (SOC) effect.
+
+In this section, we review a experimentally realized TI material bismuth (Z = 83) grown on an insulating silicon
+carbide substrate SiC(0001). The substrate not only stabilizes the honeycomb structure of the bismuthene but is also indispensable for opening a large gap in a room-temperature regime. In that case, the chemical potential resides in the global system gap, ensuring a robust edge conductance, and making experimental detection even more plausible.
+
+%experiment  structure:
+In Fig. (A), a bismuthene single layer with $\sqrt{3}\times\sqrt{3}$R30$^\circ$ superstructure grown on a SiC(0001) substrate is presented. The lattice constant of 5.35$\AA$ for bismuthene on SiC is considerably larger than that of buckled Bi(111)
+bilayers, resulting in a fully planar and robust configuration \ucite{Hsu_2015Bi}.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{20}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+Bismuthene on SiC(0001) structural model. (A) Sketch of a bismuthene layer placed on the threefold-symmetric SiC(0001) substrate in $\sqrt{3}\times\sqrt{3}$R30$^\circ$  commensurate registry.
+(B) Topographic STM overview map showing that bismuthene fully covers the substrate. The flakes
+are of ~25-nm extent, limited by domain boundaries. (C) Substrate step-height profile, taken
+along the red line in (B). The step heights correspond to SiC steps. (D) The honeycomb pattern
+is seen on smaller scan frames. (E) Close-up STM images for occupied and empty states (left and
+right panels, respectively). They confirm the formation of Bi honeycombs.\ucite{Reis2017Bi}}
+\end{center}
+\end{figure}
+Fig. (B,C) show a scanning tunneling microscopy (STM) image for the 2D sample and a line on the sample versus height, while smaller-scaled Fig. (D,E,F) demonstrate the hexagonal structure for the bismuthene layer.
+
+%Inspection of the layer on a smaller scale reveals the characteristic honeycomb pattern of bismuthene (Fig. 1D). Detailed view of the honeycomb structure is provided by the STM close-up in Fig. 1E. For both occupied and empty states, the images show a honeycomb pattern throughout
+The band structure calculated using density-functional theory (DFT) with a hybrid exchange-correlation functional (including SOC) is shown in Fig. 2 (A), in close agreement with an angle-resolved photoelectron spectroscopy (ARPES) shown in Fig. 2 (B).
+The band of bismuthene on SiC has a direct energy gap amounts to 1.06 eV at K point, with an indirect gap of 0.67 eV in DFT, which is six orders of magnitude larger than that in graphene with $\thicksim\mu$eV.
+Fig. (C) shows a valence-band maximum (VBM) ARPES image at K point in a specific way of cutting and Fig. (D) shows the six fold degeneracy of K and K' points for the VBM.
+
+%???Rashba term lR is much smaller than lSOC, it induces the large valence-band splitting (as seen clearly in ARPES) into states of opposite spin character, while leaving the conduction band spin-degenerate at K (Fig. 3D).
+
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{21}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+Theoretical band structure and ARPES measurements. (A) DFT
+band-structure calculation (with a hybrid exchange-correlation functional)
+including SOC, showing the wide band gap and a substantial band splitting in
+the valence band (dashed line). For position of the critical points G, K, and
+M, see the surface Brillouin zone (SBZ) in (D). (B) ARPES band dispersion
+through the Brillouin zone. The band maximum at K and the valence-band
+splitting are in close agreement with the theoretical prediction (overlay).
+The zero of energy (EF) is aligned to the Fermi level of the spectrometer.
+(C) Close-up of ARPES showing a valence-band maximum at the K point with
+large SOC-induced splitting in a wide momentum range. The sketch in the
+top-right corner depicts the orientation of the cut (black lines) in the momentum
+space of the SBZ (blue hexagon). (D) Constant-energy surfaces from ARPES
+at various binding energies. The cut at low binding energies is taken at
+the topmost intensity corresponding to the valence-band maximum. The
+maps are consistent with the sixfold degeneracy of the K and K′ points
+of the hexagonal lattice.\ucite{Reis2017Bi}}
+\end{center}
+\end{figure}
+
+%Model analyse, why have gap, and how different it is from other proposals:::
+The mechanism here producing a QSH phase with the nontrivial topological invariant Z2 = 1 %[see (22) and fig. S6 for derivation] and
+is very different from that of Kane-Mele model for graphene. Graphene’s gap is opened by SOC between next-nearest neighbors, at the second-order perturbation theory level and is therefore minute. In other group IV monolayers, such as silicene, the SOC remains of the next-nearest–neighbor type as we discussed before, and the relevant orbital is still pz. However, in bismuthene, the low-energy physics is governed by the huge on-site SOC of px and py orbitals. This is also distinct from HgTe/CdTe quantum wells, where the small band gap is drivened by a complex band situation and opens only upon strain \ucite{Bernevig2006QSH,Konig2007QSH}(3, 4).
+
+%edge::::
+With a tight-binding model coming from DFT, the edge states are theoretically confirmed. The right part of Fig. () shows the landmark feature of QSH systems. The edge states are both gapless, irrespective of the choice of edge architecture
+(zigzag or armchair).
+In the left panel, the orange clouds represent the locations of in-gap edge states in real space. They all occur on the edge instead of in the bulk, facilitating conductance along both edges.
+%(In a ribbon simulation, the states rapidly decay toward the bulk within one unit cell, i.e., $\thicksim$ 5 $\AA$ (fig. S8).)
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{22}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+Properties of edges states in bismuthene ribbons modeled by DFT. (A)
+Ribbon slab used for a full DFT calculation for an edge with armchair geometry
+(bismuthene ribbon width 37.45 $\AA$, underlying single bilayer SiC width 74.9 $\AA$). (B)
+Analogous ribbon with zigzag edge geometry (ribbon width 37.06 $\AA$). – For both
+scenarios, the resulting electron band structure, derived from a tight-binding model of the
+slab (see Materials and Methods), is shown in the lower panels: Two Dirac bands that
+cross each other and connect valence and conduction band are seen, as a hallmark of
+QSH systems. The real space location of these in-gap states is marked in the ribbons as
+orange clouds. Their lateral confinement confirms that they constitute 1D edge channels.
+Towards the bulk of the film, they are confined within one unit cell, corresponding to a
+decay length of about 5 $\AA$. Moreover, these states derive solely from the bismuthene
+layer, without substrate contribution.\ucite{Reis2017Bi}}
+\end{center}
+\end{figure}
+
+The helical edge channels at different edges in the bismuthene (SiC (00001) ) sample are further checked experimentally, and proved to be stable against particular geometric settings.
+Using scanning tunneling spectroscopy (STS), the local DOS (LDOS) is inspected along some lines that cross the SiC-substrate steps. The corresponding differential tunneling conductivity (dI/dV) curves, reflecting the LDOS, along a path toward an uphill step are shown in Fig. 4(A) (I, tunneling current; V, bias voltage).
+In Fig. 4C, the dI/dV signal (integrated over the gap) shows a decay
+length of (4 $\pm$ 1) $\AA$.%, matching well with DFT for simple ribbon edges (fig. S8).
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{23}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+. Tunneling spectroscopy of edge states at substrate steps.
+(A) Differential conductivity dI/dV (reflecting the LDOS) at different distances to the edge. A large gap of ~0.8 eV is observed in bulk bismuthene
+(black curve). Upon approaching the edge, additional signal of increasing
+strength emerges that fills the entire gap. Inset: STS measurement
+locations (color-coded dots relate to spectrum color) at uphill substrate
+step causing the boundary. (B) Spatially resolved dI/dV data across the
+same step. The dI/dV signal of the in-gap states peaks at both film edges
+(gray dashed lines mark dI/dV maxima). (C) Topographic z(x) line profile
+of the step and dI/dV signal of bismuthene (integrated over the gap
+from +0.15 to +0.55 eV), showing an exponential decrease away from the
+step edge, on either side.\ucite{Reis2017Bi}}
+\end{center}
+\end{figure}
+
+Though not explicitly demonstrated, the topological characters of the edge state (i.e., QSH effect) has been strongly suggested to be valid.
+The large gap in bulk also make experiment and possible applications easier. The fundamental ingredient that stabilizes
+the wide-gap QSH phase in bismuthene is the comparatively large lattice constant defined by the
+SiC-substrate registry.
+%Since the fermi energy $E_F$ resides within both the bismuthene gap (~0.8 eV) as well as the SiC gap (3.2 eV), the conduction should solely be governed by the edge states.
+
+
+
+\section{Second order topological insulators }
+
+A second-order topological insulator (SOTI) in d spatial dimensions features topologically protected
+gapless states at its (d-2)-dimensional boundary,% at the intersection of two crystal faces,
+but is gapped in dimension higher than d-2.
+As a recently proposed novel topological state, SOTI has been attracting great interest, but challenge still remains identifying a realistic SOTI material in two dimensions.%, possibly because of the fewer number of 2D materials.
+
+In the following, we summarize several 2D elementary materials that are SOTI.% basically in the order that they were proposed.
+\subsection{Graphdiyn and graphyne}
+
+Graphdiyne (GDY), a new carbon allotrope with single-atom thickness was proved to be a realistic SOTI material, whose synthesization had already been accomplished by Li and co-works through an in situ cross-coupling method \ucite{2010LiGDY}.
+
+
+%Our results uncover a hidden topological character of graphdiyne and promote it as a concrete material platform for exploring the intriguing physics of higher-order topological phases.
+
+
+
+The GDY has a completely flat lattice structure of a single-atom thickness, stabilized by a high $\pi$ conjugation coming from its specific $sp$ and $sp^2$ combined hybridization. It also has the same $p6m$ symmetry as graphene with lattice constant 9.46 ${\AA}$ (Fig. (a)).
+
+From Fig. 1(c),  a direct band
+gap $\thicksim$0.51 eV can be observed. With negligible spin-orbit coupling (SOC), GDY has trivial first order but non-trivial second order topology.
+ %(The band gap is increased to ～1.10 eV with the GW approach [62], while the band topology remains the same. See the Supplemental Material [48].)
+To identify the second order topology, the representations of bands are analyzed. The conduction band minimum (CBM) corresponds to$E_{2u}$ of the$D_{6h}$ group, while the
+valence band maximum (VBM) to $E_{1g}$, both of which are degenerate
+doublet states, and they have opposite parities under inversion.
+It indicates an inverted band ordering at Γ, which plays a key role in the existence of corner states.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{3}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+(a) Crystal structure of GDY; (b) shows the Brillouin
+zone. The red lines indicate the three equivalent mirrors $M_y$.
+(c) Bulk electronic band structure of GDY. The CBM and the
+VBM states have $E_{2u}$ and $E_{1g}$ symmetry characters, respectively.\ucite{Chen2019SOTI}}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{4}
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+ (a) Zigzag and (b) armchair edge of a semi-infinite sheet
+of GDY. $M_y$ is preserved for the zigzag edge, but not for the
+armchair edge. (c) and (d) show the projected spectra for the
+zigzag edge and armchair edge, respectively. Note that there is a
+small gap between the edge bands in (c).}
+\end{center}
+\end{figure}
+Following the previous step in discovering TI, 1D edge states of GDY are investigated. In Figs. 2(c) and 2(d), the edge spectra for the zigzag (Figs. 2(a)) and the armchair (Fig. (b)) edges are plotted. Though different in real space geometry, both of the edge spectra are gapped, therefore can not be characterized as one of those conventional TIs. However, the higher-order topology of GDY is nontrivial.
+
+Each of the two pairs of gapped edge bands can be captured by an 1D Dirac model with a mass term $m_M$.
+Since the edge spectrums admit Z2 classifications, the protected corner state must arise as the topological domain-wall state at the
+intersection between two edges, if they belong to different
+topological classes(Fig. ()).
+As this is the case for two edges related by a mirror symmetry, for a
+hexagonal-shaped GDY nanodisk whose neighboring edges are related by $\mathcal{M}_y$, six protected states
+localized at the six corners should exist, due to an approximate chiral (sublattice) symmetry.
+%Besides, the protected 0D mode must exist at the corner must exist, regardless of the detailed edge geometry.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{14}
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+ (a) Schematic figure showing that two edges related by
+My must have opposite Dirac mass and hence distinct topological classification. (b) Therefore, the corner at the intersection of
+the two edges must host a protected corner state as a topological
+domain-wall state.\ucite{Chen2019SOTI}}
+\end{center}
+\end{figure}
+
+As a test for the above theory, the corner states, hallmark
+of a 2D SOTI, should be explicitly shown in GDY nanodisk calculations.
+To this end, a hexagonal-shaped nanodisk calculation manifestly demonstrating the 6 localized 0D corner states is performed and presented in Fig. 3(b). One of the reasons for choosing the hexagonal nanodisk is that the geometry has been realized in experiment from the bottom-up interfacial synthesis approach \ucite{Matsuoka2017GDY}, so the corners could be checked. Notably, the 6 degenerated corner states as shown in Fig. 3(a) are located at the Fermi level and hence could be detected in the gap range of the bulk band. At half filling, three of the six states will be occupied, which means the excitation of the system is gapless, with zero-energy corner excitations.
+%The features of the corner states in the hexagonal nanaodisk mentioned above could facilitate the experimental realization.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{5}
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+ (a) Energy spectrum of the hexagonal-shaped GDY
+nanodisk shown in (b). Energy levels are plotted in ascending
+order. (b) Also shows the charge distribution of the six zero-energy states, which are localized at corners.\ucite{Chen2019SOTI}}
+\end{center}
+\end{figure}
+
+Although slightly breaking of crystalline symmetry will not affect the corner states, (as long as the bulk and edge
+gaps are not closed), the edge modification/contamination and adsorption of the sample may
+strongly affect the boundary spectrum, and should be avoided as much as one can. It is because a locally breaking of the chiral symmetry could shift the corner states out of
+the bulk gap, mixing with other states, and therefore making experimental detection more difficult. %Therefore, one should try as one can to avoid the edge contamination in experiment.
+
+
+%graphyne
+Following the similar logic shown in Fig. (), graphyne was also found to be a 2D elementary SOTI material, more specifically, a 2D real Chern insulator (RCI) characterized by a nontrivial real Chern number.
+% real Chern number is enabled by the space-time inversion symmetry PT , and is explicitly evaluated here by using both the Wilson-loop method and the parity approach.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{8}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+ (a) Crystal structure of graphyne. (b) Unit cell of
+graphene. It has a bipartite lattice, namely, the atomic sites
+can be divided into two sublattices, as marked by the two colors in the figure. When hopping between distinct sublattices
+dominates, the system preserves the sublattice symmetry. (c)
+Brillouin zone with high symmetry points labeled. (d) Bulk
+electronic band structure of graphyne. The direct band gap
+occurs at the three M points.\ucite{chen2020graphyne}}
+\end{center}
+\end{figure}
+
+Inserted with one acetylenic linkage between two nearby hexagonal carbon rings in the graphene lattice, the graphyne has the most stable structure in the graphyne-family \ucite{Solis2019GDYGPY}.
+The structure is shown in Fig. 1(a), with lattice constant 6.890 $\AA$ coming from first principal calculations. It has the same hexagonal crystalline symmetry $p6m$ as graphene and graphdiyne, and can be divided into two sublattices, as indicated in Fig. 1(b), giving rise to an emergent sublattice (chiral) symmetry.
+The lengths after optimization for each bonds are $a_0= 1.426 \AA, ~a_1= 1.408 \AA$, and $a_2= 1.222 \AA$.
+
+The band structure of graphyne are shown in Fig. 1(d). Different from the GDY, the graphyne is a triple-valley semiconductor with its minimal band gap ($\thicksim$0.46 eV) located at the M instead of $\Gamma$ point. Consequently, the projected edge spectra also exhibit different patterns (Fig. ) with GDY's. The gapes for the zigzag and armchair edge bands are 44.0 and 106.4 meV respectively, as shown in Fig. . However, the similar like GDY, the graphyne also has a double band inversion feature and hence, as demonstrated before, is a SOTI.
+%nM+ = 13, and nM? = 11; whereas at Γ, nΓ + = 11, and nΓ  = 13. This indicates a nontrivial double band inversion,
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=6cm]{9}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+A semi-infinite graphyne with (a) zigzag and (b) armchair edge. (c) and (d) show the projected spectra for the
+zigzag edge and the armchair edge, respectively.\ucite{chen2020graphyne}}
+\end{center}
+\end{figure}
+
+For corner state calculations, the nanodisk is chosen to be in hexagonal shape. Note that the essential results do not depend on the specific shape. The
+discrete energy spectrum for the disk is plotted in Fig. 3(a) with six familiar degenerated zero-energy states lying in the middle of the bulk band gap. Fig. 3(b) shows the real space localization of the six corner states, manifestly showing the SOTI feature of graphyne.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=6cm]{10}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+Corner states in graphyne. (a) shows the energy
+spectrum of the hexagonal-shaped graphyne nanodisk in (b).
+The energy levels are plotted in ascending order. The charge
+distribution of the six zero-energy modes are illustrated in
+(b), which are localized at corners.\ucite{chen2020graphyne}}
+\end{center}
+\end{figure}
+
+
+
+\subsection{Bismuthene on magnetic substrate EuO}
+
+Applying the theory of the domain wall corner states introduced above, a universal approach to get the magnetic SOTI is proposed\ucite{Chen2020Universal}. The idea is as follows.
+Break the time reversal symmetry $\mathcal T$ of an existing conventional TI,  by introducing magnetism. Under certain conditions, the resulting system will generally become a SOTI. The conditions are that the material should remain an insulator during the process of opening the edge states gap, and the magnetic exchange field is not too strong to alter the original bulk band ordering across the gap. Via this approach, the edges in the resulting system must fall into two topologically distinct classes, going through a phase change from first order TI to SOTI, where the domain wall topological corner states exist.
+In practice, the exchange field can be readily generated
+from magnetic doping or from the magnetic proximity effect. %Other crystal symmetries can have the same effect if they guarantee gap inversion between different boundaries [6–8,10,31].
+
+As an example, the bismuthene on EuO(111) (Bi/EuO) is the first proposed magnetic SOTI.
+Distinct from GDY and graphyne which are effectively spinless systems, the topological corner states for Bi/EuO are spin polarized.
+%Benefitting from the large spin-orbit coupling and sizable magnetic proximity effect, these corner states are located in a boundary gap around 83 meV, and hence can be readily probed in experiment. By controlling the magnetic phase transition, a topological phase transition between a first-order TI and a SOTI can be simultaneously achieved in the system.
+Bismuthene, a two-dimensional form of Bi, has a planar honeycomb structure without any buckling, when realized by epitaxial growth on the SiC(0001) substrate\ucite{Reis2017Bi}
+[23]. The system have a band gap around 0.8eV. All of its metastable structures of Bi are predicted to be two-dimensional TIs\ucite{Murakami2006QSHSOC,PhysRevB.83.121310,PhysRevLett.107.136805,Zhou14378,Reis2017Bi,PhysRevB.90.085431,Lu2016,doi:10.1021/acsnano.9b08136}. [19–23,42–44]
+To add magnetism while maintaining a similar in geometry like SiC, EuO, a magnetic substrate is introduced to support the TI material Bismuthene.
+EuO is a large-gap ferromagnetic insulator with a Curie temperature $\thicksim$ 69 K \ucite{doi:10.1021/acsnano.9b08136,doi:10.1063/1.1713568,doi:10.1021/nn303771f}[45–47], and prefers the in-plane magnetic direction \ucite{doi:10.1021/nn303771f,Mairoser2015}[47,48]. The structure of Bi/EuO(111) is shown in Fig. (a).
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=6cm]{6}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+ (a) Top and (b) side view of the structure of bismuthene
+grown on EuO(111) substrate. (c),(d) Band structure of the
+system (c) without and (d) with magnetism. SOC is included
+for both cases. The red circles indicate the weight of projection
+onto the Bi-$p_x$ and Bi-$p_y$ orbitals. Magnetization direction in
+(d) is along x.\ucite{Chen2020Universal}}
+\end{center}
+\end{figure}
+
+Figure 2(c) shows the band structure of the combined system Bi/EuO without any %(with a band gap ～0.5 eV)
+magnetism in the substrate, while figure 2(d) corresponds to the situation where the magnetism in EuO is turned on. The estimated exchange splitting between the two band structure is about 0.15 eV. %, which simulates the situation for T>TC.
+%The low-energy bands are mainly composed of the px and py orbitals of the Bi layer either with or without magnetism. %And an evaluation of the Z2 invariant confirms that the system is a two-dimensional TI.
+It has been checked that no inversion of band ordering across the gap has happened, when the magnetic moment is increased gradually from zero to its equilibrium value. Therefore, the ground state of Bi/EuO must be a magnetic SOTI. %introduce the theory? according to the theory\cite
+
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=6cm]{7}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+Edge spectra of Bi=EuO (a) without and (b) with
+magnetism. (c),(d) Spectra for the nanodisk geometry (c) without
+and (d) with magnetism. The insets show the distribution of the
+states marked in red in the spectra.\ucite{Chen2020Universal}}
+\end{center}
+\end{figure}
+To prove the statement,  a comparison of the edge spectra
+without and with magnetism are shown in Fig 3(a) and 3(b), which are calculated from an ab initio tight-binding model for the low-energy bands (where the substrate effects are fully incorporated).
+The gap in the edge spectra opened by the proximity-induced magnetic exchange field is ～83 meV.
+Furthermore, Figs. 3(c), 3(d) shows the calculated nanodisk geometry without and with magnetism.
+Without magnetism, the system is a TI with a quasicontinuous   spectrum, (the double degeneracy is due to $\mathcal T$ ) and
+the states at the Fermi level correspond to the QSH edge states. With magnetism, the hallmark for SOTI, the six zero
+modes, emerge at the Fermi level inside the boundary gap in the energy level plot. The six corner states are ploted in the hexagonal disk.
+
+For experimental detection of the corner state, the scanning tunneling spectroscopy (STS) technique is suggested (at liquid-helium temperature,
+STS can reach a resolution of 1 meV). Alternatively, the ferromagnetic tip in STS can help to observe the transition between the 0D corner states and the 1D spin-helical edge states, when exerting the magnetism.
+
+Owning to the rich discovery of the first-order TIs, this approach opens a practical avenue towards realising SOTIs with a wealth of
+possibilities.
+
+\subsection{tbG}
+Twisted bilayer graphene (tbG) with specific commensurate angle has a large Moir$\grave{e}$ unit cell resulting in very intriguing features especially with the magic angle\ucite{Cao2018,Cao2018p}, therefore attracts significant amount of attention. In this section, we review a recently proposed SOTI realized in the tbG system with commensurate twisting angle 21.78$^\circ$.
+
+The geometry lying in the tbG system can be expressed with two coprime integers p and q. Correspondingly, the commensurate angle yielding the Moir$\grave{e}$ super cell reads $\theta_{p,q}=\text{arccos}\frac{3p^2+3pq+q^2/2}{3p^2+3pq+q^2}$, and the lattice constant of the super cell is $L=a\sqrt{\frac{3p^2+3pq+q^2}{gcd(q,3)}}$ where a is the original lattice constant (for graphene here), and `gcd' represents the greatest common divisor.
+Starting from p=1 and q=3, a twisted angle around 21.78$^\circ$ can be generated, with which the tbG system is proved to host the corner states, hallmark for SOTI. Note that for other relatively large commensurate angles, the corner states should remain as long as the underlying symmetries are intact.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{11}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+Atomic configurations of the twisted bilayer graphene
+in (a) a single Moire unit cell and (b) a finite-sized system with
+the twist angle, $\theta = 27.78^\circ$ (p = 1, q = 3).\ucite{Park2019tbG}}
+\end{center}
+\end{figure}
+The symmetry group for tbG is the hexagonal space group  177 (point group D6). The structure is constructed by twisting the AA-stacked bilayer graphene with
+respect to the collinear axis at the hexagonal center, shown in Figs. 1(a) and 1(b). %The twist preserves both C6z and C2xabout the out-of-plane z- and in-plane x-axes, respectively, which generate another important rotation C2yabout the y-axis.
+
+
+The band structure of tbG looks very similar like that of graphene but with a gap opened. Two single layer graphene can each have a twofold Dirac point, therefore when put  together a fourfold Dirac point can be conjectured, however, it is subtle for tbG systems. In the large angle limit $\theta\to$ 30$^\circ$, the $U(1)_v$ valley symmetry is broken and the fourfold-degenerate Dirac point is split into two pairs of massive Dirac points, shown in Fig. (a,b). It is not the end of the story, when the twisting angle is relatively large resulting in a relatively small Moir$\grave e$ super cell. In that case, the two pairs of massive Dirac cones interact with each other, so that those cones could be gapped out. The story holds for tbG with  $\theta = 21.78^\circ$, where a gap of $\thicksim$ 9 meV is opened and has a
+tendency to increase as the twist angle increases, because the Moire cell becomes smaller then and the inter-valley coupling becomes larger.
+
+The higher-order band topology are explored by calculating a mirror-winding number and the second Stiefel-Whitney number. To achieve that, a tight-binding model constructed by using all the occupied 56 bands is created. With that, the corner states guaranteed by the second Stiefel-Whitney number can also be plotted.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=8cm]{12}
+%\caption{\bf Interpolating nucleon self-energy: time ordered diagram }
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+ (a) DFT band structures of twisted bilayer graphene
+with $\theta = 27.78^\circ$
+. The right panel shows the magnified view of
+the region near K indicated by a gray box in the left panel.
+(b) Moire Brillouin zone and the parity eigenvalues for half the
+occupied bands with negative parity. Time-reversal invariant
+momenta are indicated by a solid circle. A dotted red line
+highlights the high-symmetry $C_{2x}$-invariant line at $k_x$ = 0.
+(c) Zak phase calculated using the mirror +1 bands along the
+mirror-invariant kx = 0 line. The red curve represents the ith eigenphase $\theta_i$. The blue curve represents the accumulated
+phase up to ith states, which results in $\pi$ when summed up
+over all the occupied mirror-+1 bands. The mirror winding
+number is calculated for the 56 occupied bands, comprising
+the same number of mirror-+ and mirror- bands ($N^ +_{ occ} = N^-_{ occ} = 28$).\ucite{Park2019tbG}}
+\end{center}
+\end{figure}
+In Fig. 3, %half filling
+the localized corner states related by $C_6$
+symmetric in real space is shown. Though only the commensurate angle of $\theta = 27.78^\circ$ is investigated, the conclusion can be further extended.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=5cm]{13}
+\parbox[c]{7.5cm}{\footnotesize{\bf Fig.~1.} (color online)
+The topological corner states derived from the tight
+binding model with (a) mirror symmetric and (b) $C_6$ symmetric open boundary conditions. The size of the red circles
+indicate the wave function amplitude. We find e/2
+localized
+states on the corners in both boundary conditions. We have
+used the same tight-binding parameters as ref. \cite{PhysRevB.87.205404}.\ucite{Park2019tbG}}
+\end{center}
+\end{figure}
+The eigenvalues of $C_{2z}$ operator and the Stiefel-Whitney number remains the same no matter how the interlayer
+coupling changes as long as the associated symmetries are preserved, therefore the corner state can be retained to arbitrary commensurate angles.% ??symmertry % without the microscopic band structure calculations, %assuming that all the low energy physics is described near K and $K_0$ points.
+
+All the corner states occur at fermi level, which is good for experimental realization. Ultra clean transfer techniques are available to detect those corner states.
+% (iii) The HOTI in graphene is very unique system realized by intervalley scattering with negligible  spin-orbit coupling. Thus, one can avoid any ambiguity  arising from the spin-orbit coupling effect.
+
+
+
+\section{Conclusion}
+
+So far, most proposed 2D elementary TIs are IV group elements, with a honeycomb liked lattice structure. The band gap which determines the temperature range for application or experiment is the most important concern in the area of finding 2D TI materials. According to previous studies that we review, certain rules that may govern the gap amplitudes can be inferred.
+
+The 2D elementary materials with larger atomic numbers results in larger band gaps. For graphene, the band gap is in the order of 10$^{-3}$ meV, difficult for experiment or any application. The situation gets better for silicene, which is a possible material for silicon industry, and have so many potential applications once realized. The gap for silicene is 1.55 meV approximately corresponding to 18 K, while its partner germanium has a larger gap of 23.9 meV corresponding to 277 K. However, a larger gap is required for accommodating room temperature 300K. Not surprisingly, the TI material stanene has a gap of 0.1eV and Bismuthene on SiC substrate has a large gap around 0.8eV, seeming to be good candidates for electronics and spintroics industry.
+
+There are other factors that could increase the band gap. For silicene, the more buckled (fluctuated) the structure is, the larger the gap could be. For stanene, having chemical bond enlarges the gap to be of around 0.3 eV, although the resulting structure is less buckled that pure stanene. Similarly, having substrate atom coupled with stanene and bismuthene builds larger gaps than their corresponding free standing low-bulked structures.
+
+%For TI, looks like chemical functionalization group and substrate effect helps enlarge the band gap. As an important semiconductor material, germanium, is also proved to be able to  realize QSHE, although not synthesized in experiments yet. The gap induced by SOC effect at the Dirac point in low-buckled germanium is much higher than that of silicene and the liquid nitrogen temperature.
+
+For the fascinating area of SOTI, proposed 2D elementary materials are still very limited. %Conjecturing from all the discovered SOTI, a hexagonal shape is popular not only in the single layer but also in the twisted double layer. tbG or graphdiyn is both making a suppercell compared with graphene.
+Since the corner states in 2D corresponds to the Majorana zero mode, which can be applied for braiding in quantum computing, the task for searching a wealth of SOTI in 2D has not only scientific but also industrial importance.
+
+
+
+%\addcontentsline{toc}{chapter}{Appendix A: Appendix section heading}
+%\section*{Appendix A: Appendix heading}
+%Appendix is optional.
+
+\addcontentsline{toc}{chapter}{Acknowledgment}
+\section*{Acknowledgment}
+The scientific contributions from other people or groups are acknowledged here. Financial supports are given in the footnote on the first page.
+
+
+%\printbibliography
+\addcontentsline{toc}{chapter}{References}
+\bibliographystyle{unsrt}%\bibliographystyle{apsrev4-1}{}
+\bibliography{My_reference}
+
+
+%\begin{thebibliography}{99}\footnotesize
+%\itemsep=-3pt plus.2pt minus.2pt   % set the reference line spacing
+%
+%[1] Yao Y, Ye F, Qi X L, Zhang S C and Fang Z 2007 Spin-orbit gap of graphene: First-principles calculations Phys. Rev. B - Condens. Matter Mater. Phys. 75 2–5
+%
+%\bibitem{CC Liu:2011} Liu, Cheng-Cheng, Wanxiang Feng, and Yugui Yao. "Quantum spin Hall effect in silicene and two-dimensional germanium." Physical review letters 107.7 (2011): 076802.
+%%\bibitem{1} \href{http://cpb.iphy.ac.cn/EN/column/column297.shtml}{http://cpb.iphy.ac.cn/EN/column/column297.shtml}
+%\bibitem{2} Yu Z H, Tian J R and Song Y R \href{http://cpb.iphy.ac.cn/EN/abstract/abstract60873.shtml}{2014 \emph{Chin. Phys. B} \textbf{23} 094206}
+%\bibitem{3} Liu G Q and Ying H P \href{http://cpb.iphy.ac.cn/EN/abstract/abstract59144.shtml}{2014 \emph{Chin. Phys. B} \textbf{23} 050502}
+%\bibitem{4} Zhao S M and Zhuang P \href{http://cpb.iphy.ac.cn/EN/abstract/abstract59170.shtml}{2014 \emph{Chin. Phys. B} \textbf{23} 054203}
+%\end{thebibliography}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
